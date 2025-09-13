@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Weather - LuvTheWeather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/weather.css">
+    <link rel = "icon" type = "image/png" href = "/images/weather.png">
+</head>
+<body>
+    <div class="weather-background">
+        <div class="sun"></div>
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+    </div>
+    
+    <div class="container">
+        <a href="/" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="weather-icon">
+            <i class="fas fa-cloud-sun"></i>
+        </div>
+        
+        <h1>Know Your Weather</h1>
+        <p class="subtitle">Enter your city to get the current weather conditions</p>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button class="know-btn" id="knowWeatherBtn">
+                    <i class="fas fa-search-location"></i> Know Weather
+                </button>
+            </div>
+        </div>
+        <div id = "box">
+            <h2 id = "line"></h2>
+        </div>
+    </div>
+    <script src = "/javascripts/weather.js"></script>
+    </body>
+    </html>
